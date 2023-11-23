@@ -1,0 +1,1 @@
+(self.webpackChunkwebpack_pug=self.webpackChunkwebpack_pug||[]).push([[983],{1983:function(e){e.exports=function(){"use strict";function e(){var e=this,t=e.deleteSelection;this.hook("instead","deleteSelection",(n=>!!e.activeItems.length&&t.call(e,n)))}return e}()}}]);
