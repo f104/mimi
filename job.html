@@ -48,11 +48,11 @@
             </svg><span class="header__btn__text">Рестораны</span></a></div>
         <div class="header__block">
           <div class="header__contacts">
-            <div class="header-contacts js-header-call">
+            <div class="header-contacts">
               <div class="header-contacts__inner">
-                <div class="header-contacts__inner__content"><a class="header-contacts__link" href="#">+7 (499)
-                    490-33-00</a><span class="header-contacts__text">Забронировать стол</span></div><button
-                  class="header-contacts__toggler js-header-call-toggler" title="Еще телефоны"></button>
+                <div class="header-contacts__inner__content"><span class="header-contacts__link">+7 (499)
+                    490-33-00</span><span class="header-contacts__text">Забронировать стол</span></div><span
+                  class="header-contacts__toggler"></span>
               </div>
               <div class="header-contacts__popup">
                 <div class="header-contacts__popup__call">
@@ -71,10 +71,10 @@
                     </svg><span>Чат поддержки</span></a><a class="btn _in-black _sm _wide" href="#"><svg
                       class="svgsprite _whatsapp" tabindex="-1" role="img">
                       <use xlink:href="svgsprite.svg#whatsapp" tabindex="-1"></use>
-                    </svg><span>Чат поддержки</span></a><a class="btn _in-black-outline _sm _wide" href="#"><svg
-                      class="svgsprite _chat" tabindex="-1" role="img">
+                    </svg><span>Чат поддержки</span></a><button class="btn _in-black-outline _sm _wide js-feedback-open"
+                    href="#"><svg class="svgsprite _chat" tabindex="-1" role="img">
                       <use xlink:href="svgsprite.svg#chat" tabindex="-1"></use>
-                    </svg><span>Чат поддержки</span></a></div>
+                    </svg><span>Обратная связь</span></button></div>
               </div>
             </div>
           </div>
@@ -733,19 +733,19 @@
                     autocomplete="off" required name="rest">
                     <option value="">-</option>
                     <option value="1"
-                      data-rest="{&quot;id&quot;:1,&quot;img&quot;:&quot;assets/img/rests/1.jpg&quot;,&quot;address&quot;:&quot;ул. Маршала Катукова, 23&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Солнцево»&quot;],&quot;filter&quot;:&quot;Маршала Катукова, Солнцево&quot;,&quot;geo&quot;:[55.805665,37.413367],&quot;delivery&quot;:[[55.83290716625707,37.396686801974155],[55.80836010121385,37.38947702414225],[55.79037482562047,37.373684177462515],[55.787860090228364,37.38741708761884],[55.78437787976185,37.39291025168108],[55.77625150638885,37.402866611544304],[55.77160710029354,37.414711246554326],[55.77354233704668,37.42998910910345],[55.776445011248185,37.44440866476724],[55.77973444623415,37.45024515158393],[55.778573501019885,37.461231479709014],[55.77605800056472,37.479427585665874],[55.78882731544236,37.48526407248233],[55.79907842004093,37.502086887423644],[55.80700666111122,37.51238657004072],[55.82324482389662,37.43960214621312],[55.83290716625707,37.396686801974155]]}">
+                      data-rest="{&quot;id&quot;:1,&quot;img&quot;:&quot;assets/img/rests/1.jpg&quot;,&quot;address&quot;:&quot;ул. Маршала Катукова, 23&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Солнцево»&quot;],&quot;filter&quot;:&quot;Маршала Катукова, Солнцево&quot;,&quot;geo&quot;:[55.805665,37.413367],&quot;delivery&quot;:[[55.83290716625707,37.396686801974155],[55.80836010121385,37.38947702414225],[55.79037482562047,37.373684177462515],[55.787860090228364,37.38741708761884],[55.78437787976185,37.39291025168108],[55.77625150638885,37.402866611544304],[55.77160710029354,37.414711246554326],[55.77354233704668,37.42998910910345],[55.776445011248185,37.44440866476724],[55.77973444623415,37.45024515158393],[55.778573501019885,37.461231479709014],[55.77605800056472,37.479427585665874],[55.78882731544236,37.48526407248233],[55.79907842004093,37.502086887423644],[55.80700666111122,37.51238657004072],[55.82324482389662,37.43960214621312],[55.83290716625707,37.396686801974155]],&quot;tags&quot;:[&quot;Живая музыка&quot;,&quot;Детская зона и меню&quot;,&quot;Банкеты и кейтеринг&quot;,&quot;WI-FI&quot;,&quot;Парковка&quot;,&quot;Кальяны&quot;,&quot;Веранда&quot;,&quot;Банкетный зал&quot;]}">
                       ул. Маршала Катукова, 23</option>
                     <option value="2"
-                      data-rest="{&quot;id&quot;:2,&quot;img&quot;:&quot;assets/img/rests/2.jpg&quot;,&quot;address&quot;:&quot;Первомайская, 106А&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Измайловская»&quot;],&quot;filter&quot;:&quot;Измайловская, Первомайская&quot;,&quot;geo&quot;:[55.83208,37.813172]}">
+                      data-rest="{&quot;id&quot;:2,&quot;img&quot;:&quot;assets/img/rests/2.jpg&quot;,&quot;address&quot;:&quot;Первомайская, 106А&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Измайловская»&quot;],&quot;filter&quot;:&quot;Измайловская, Первомайская&quot;,&quot;geo&quot;:[55.83208,37.813172],&quot;tags&quot;:[&quot;Живая музыка&quot;,&quot;Детская зона и меню&quot;,&quot;Банкеты и кейтеринг&quot;,&quot;WI-FI&quot;]}">
                       Первомайская, 106А</option>
                     <option value="3"
-                      data-rest="{&quot;id&quot;:3,&quot;img&quot;:&quot;assets/img/rests/3.jpg&quot;,&quot;address&quot;:&quot;ул. Первомайская, 33&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Солнцево»&quot;],&quot;filter&quot;:&quot;Солнцево, Первомайская&quot;,&quot;geo&quot;:[55.831875,37.78171]}">
+                      data-rest="{&quot;id&quot;:3,&quot;img&quot;:&quot;assets/img/rests/3.jpg&quot;,&quot;address&quot;:&quot;ул. Первомайская, 33&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Солнцево»&quot;],&quot;filter&quot;:&quot;Солнцево, Первомайская&quot;,&quot;geo&quot;:[55.831875,37.78171],&quot;tags&quot;:[&quot;Живая музыка&quot;,&quot;Детская зона и меню&quot;,&quot;Банкеты и кейтеринг&quot;]}">
                       ул. Первомайская, 33</option>
                     <option value="4"
-                      data-rest="{&quot;id&quot;:4,&quot;img&quot;:&quot;assets/img/rests/4.jpg&quot;,&quot;address&quot;:&quot;д.Покровское, ул. Центральная, 33, к. 12, Гастровилла Novaya Riga&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Солнцево»&quot;,&quot;«Павелецкая»&quot;],&quot;filter&quot;:&quot;Солнцево, Павелецкая, Покровское, Центральная, Гастровилла Novaya Riga&quot;,&quot;geo&quot;:[55.841019,37.025886]}">
+                      data-rest="{&quot;id&quot;:4,&quot;img&quot;:&quot;assets/img/rests/4.jpg&quot;,&quot;address&quot;:&quot;д.Покровское, ул. Центральная, 33, к. 12, Гастровилла Novaya Riga&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Солнцево»&quot;,&quot;«Павелецкая»&quot;],&quot;filter&quot;:&quot;Солнцево, Павелецкая, Покровское, Центральная, Гастровилла Novaya Riga&quot;,&quot;geo&quot;:[55.841019,37.025886],&quot;tags&quot;:[&quot;Живая музыка&quot;,&quot;Детская зона и меню&quot;]}">
                       д.Покровское, ул. Центральная, 33, к. 12, Гастровилла Novaya Riga</option>
                     <option value="5"
-                      data-rest="{&quot;id&quot;:5,&quot;img&quot;:&quot;assets/img/rests/1.jpg&quot;,&quot;address&quot;:&quot;Большая Пироговская ул., 37-43кА&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Солнцево»&quot;],&quot;filter&quot;:&quot;Солнцево, Большая Пироговская&quot;,&quot;geo&quot;:[55.767647,37.56434]}">
+                      data-rest="{&quot;id&quot;:5,&quot;img&quot;:&quot;assets/img/rests/1.jpg&quot;,&quot;address&quot;:&quot;Большая Пироговская ул., 37-43кА&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Солнцево»&quot;],&quot;filter&quot;:&quot;Солнцево, Большая Пироговская&quot;,&quot;geo&quot;:[55.767647,37.56434],&quot;tags&quot;:[&quot;Живая музыка&quot;]}">
                       Большая Пироговская ул., 37-43кА</option>
                     <option value="6"
                       data-rest="{&quot;id&quot;:6,&quot;img&quot;:&quot;assets/img/rests/2.jpg&quot;,&quot;address&quot;:&quot;Боровское шоссе д. 6 к. 3&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Измайловская»&quot;,&quot;«Солнцево»&quot;,&quot;«Павелецкая»&quot;],&quot;filter&quot;:&quot;Измайловская, Солнцево, Павелецкая, Боровское шоссе&quot;,&quot;geo&quot;:[55.657921,37.398276],&quot;delivery&quot;:[[55.71252953393463,37.388491301513],[55.69120316519821,37.41321053979454],[55.68189345041121,37.418017058349015],[55.659773955772664,37.43586984155206],[55.63764190106353,37.46127572534141],[55.63065022109664,37.43792977807562],[55.61433142802745,37.37544503686466],[55.623268755068366,37.37063851830995],[55.63026175769259,37.360338835692936],[55.63298092030631,37.34317269799757],[55.64036054934597,37.33081307885705],[55.64540896489521,37.32531991479438],[55.64657389106804,37.30472054955988],[55.64890363901726,37.2813746022943],[55.650068460794905,37.25596871850522],[55.65744485734251,37.29785409448179],[55.69546937394921,37.339052824950556],[55.71020358889891,37.36308541772405],[55.71252953393463,37.388491301513]]}">
@@ -976,7 +976,8 @@
                   <use xlink:href="svgsprite.svg#old-phone" tabindex="-1"></use>
                 </svg><span class="call__inner"><a class="call__link" href="#">+7 (499) 490-33-00</a><span
                     class="call__text">забронировать стол</span></span></div>
-            </div><button class="btn _in-black-outline _xs"><svg class="svgsprite _chat" tabindex="-1" role="img">
+            </div><button class="btn _in-black-outline _xs js-feedback-open"><svg class="svgsprite _chat" tabindex="-1"
+                role="img">
                 <use xlink:href="svgsprite.svg#chat" tabindex="-1"></use>
               </svg><span>Обратная связь</span></button>
           </div>
@@ -1269,6 +1270,120 @@
         <div class="popup__content">
           <div class="popup__loader"></div>
           <div class="popup__ajax__content js-popup__content"></div>
+        </div>
+      </div>
+    </div>
+    <div class="booking js-feedback" id="feedback">
+      <div class="booking__overlay js-feedback-close"></div>
+      <div class="booking__inner">
+        <div class="booking__content">
+          <h3 class="booking__title">Обратная связь</h3><button class="booking__close js-feedback-close"
+            title="Закрыть"><svg class="svgsprite _close" tabindex="-1" role="img" aria-hidden="true">
+              <use xlink:href="svgsprite.svg#close" tabindex="-1"></use>
+            </svg></button>
+          <form class="booking__scroll js-form" novalidate autocomplete="off" action="form-success">
+            <div class="booking__fields">
+              <div>
+                <div class="input js-multiselect _hide-search _lg _in-white"><select
+                    class="js-multiselect__select js-checkout-rest js-feedback__rest" aria-hidden="true"
+                    data-label="Выберите ресторан" data-error-message="Это поле обязательно" data-is-rests
+                    autocomplete="off" name="rest">
+                    <option value="">-</option>
+                    <option value="1"
+                      data-rest="{&quot;id&quot;:1,&quot;img&quot;:&quot;assets/img/rests/1.jpg&quot;,&quot;address&quot;:&quot;ул. Маршала Катукова, 23&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Солнцево»&quot;],&quot;filter&quot;:&quot;Маршала Катукова, Солнцево&quot;,&quot;geo&quot;:[55.805665,37.413367],&quot;delivery&quot;:[[55.83290716625707,37.396686801974155],[55.80836010121385,37.38947702414225],[55.79037482562047,37.373684177462515],[55.787860090228364,37.38741708761884],[55.78437787976185,37.39291025168108],[55.77625150638885,37.402866611544304],[55.77160710029354,37.414711246554326],[55.77354233704668,37.42998910910345],[55.776445011248185,37.44440866476724],[55.77973444623415,37.45024515158393],[55.778573501019885,37.461231479709014],[55.77605800056472,37.479427585665874],[55.78882731544236,37.48526407248233],[55.79907842004093,37.502086887423644],[55.80700666111122,37.51238657004072],[55.82324482389662,37.43960214621312],[55.83290716625707,37.396686801974155]],&quot;tags&quot;:[&quot;Живая музыка&quot;,&quot;Детская зона и меню&quot;,&quot;Банкеты и кейтеринг&quot;,&quot;WI-FI&quot;,&quot;Парковка&quot;,&quot;Кальяны&quot;,&quot;Веранда&quot;,&quot;Банкетный зал&quot;]}">
+                      ул. Маршала Катукова, 23</option>
+                    <option value="2"
+                      data-rest="{&quot;id&quot;:2,&quot;img&quot;:&quot;assets/img/rests/2.jpg&quot;,&quot;address&quot;:&quot;Первомайская, 106А&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Измайловская»&quot;],&quot;filter&quot;:&quot;Измайловская, Первомайская&quot;,&quot;geo&quot;:[55.83208,37.813172],&quot;tags&quot;:[&quot;Живая музыка&quot;,&quot;Детская зона и меню&quot;,&quot;Банкеты и кейтеринг&quot;,&quot;WI-FI&quot;]}">
+                      Первомайская, 106А</option>
+                    <option value="3"
+                      data-rest="{&quot;id&quot;:3,&quot;img&quot;:&quot;assets/img/rests/3.jpg&quot;,&quot;address&quot;:&quot;ул. Первомайская, 33&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Солнцево»&quot;],&quot;filter&quot;:&quot;Солнцево, Первомайская&quot;,&quot;geo&quot;:[55.831875,37.78171],&quot;tags&quot;:[&quot;Живая музыка&quot;,&quot;Детская зона и меню&quot;,&quot;Банкеты и кейтеринг&quot;]}">
+                      ул. Первомайская, 33</option>
+                    <option value="4"
+                      data-rest="{&quot;id&quot;:4,&quot;img&quot;:&quot;assets/img/rests/4.jpg&quot;,&quot;address&quot;:&quot;д.Покровское, ул. Центральная, 33, к. 12, Гастровилла Novaya Riga&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Солнцево»&quot;,&quot;«Павелецкая»&quot;],&quot;filter&quot;:&quot;Солнцево, Павелецкая, Покровское, Центральная, Гастровилла Novaya Riga&quot;,&quot;geo&quot;:[55.841019,37.025886],&quot;tags&quot;:[&quot;Живая музыка&quot;,&quot;Детская зона и меню&quot;]}">
+                      д.Покровское, ул. Центральная, 33, к. 12, Гастровилла Novaya Riga</option>
+                    <option value="5"
+                      data-rest="{&quot;id&quot;:5,&quot;img&quot;:&quot;assets/img/rests/1.jpg&quot;,&quot;address&quot;:&quot;Большая Пироговская ул., 37-43кА&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Солнцево»&quot;],&quot;filter&quot;:&quot;Солнцево, Большая Пироговская&quot;,&quot;geo&quot;:[55.767647,37.56434],&quot;tags&quot;:[&quot;Живая музыка&quot;]}">
+                      Большая Пироговская ул., 37-43кА</option>
+                    <option value="6"
+                      data-rest="{&quot;id&quot;:6,&quot;img&quot;:&quot;assets/img/rests/2.jpg&quot;,&quot;address&quot;:&quot;Боровское шоссе д. 6 к. 3&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Измайловская»&quot;,&quot;«Солнцево»&quot;,&quot;«Павелецкая»&quot;],&quot;filter&quot;:&quot;Измайловская, Солнцево, Павелецкая, Боровское шоссе&quot;,&quot;geo&quot;:[55.657921,37.398276],&quot;delivery&quot;:[[55.71252953393463,37.388491301513],[55.69120316519821,37.41321053979454],[55.68189345041121,37.418017058349015],[55.659773955772664,37.43586984155206],[55.63764190106353,37.46127572534141],[55.63065022109664,37.43792977807562],[55.61433142802745,37.37544503686466],[55.623268755068366,37.37063851830995],[55.63026175769259,37.360338835692936],[55.63298092030631,37.34317269799757],[55.64036054934597,37.33081307885705],[55.64540896489521,37.32531991479438],[55.64657389106804,37.30472054955988],[55.64890363901726,37.2813746022943],[55.650068460794905,37.25596871850522],[55.65744485734251,37.29785409448179],[55.69546937394921,37.339052824950556],[55.71020358889891,37.36308541772405],[55.71252953393463,37.388491301513]]}">
+                      Боровское шоссе д. 6 к. 3</option>
+                    <option value="7"
+                      data-rest="{&quot;id&quot;:7,&quot;img&quot;:&quot;assets/img/rests/3.jpg&quot;,&quot;address&quot;:&quot;Проезд Дежнева, 13&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Солнцево»&quot;],&quot;filter&quot;:&quot;Солнцево, Проезд Дежнева&quot;,&quot;geo&quot;:[55.870652,37.641018],&quot;delivery&quot;:[[55.90927870698827,37.587460547984264],[55.90542168385894,37.587460547984264],[55.87107720406129,37.585743934214726],[55.865671923100315,37.58368399769129],[55.847713246265634,37.5843706431991],[55.847133795322115,37.62179282337488],[55.845395390441176,37.646512061656146],[55.844815904797166,37.653035193980365],[55.84095244546476,37.66367819935145],[55.84616802447173,37.66985800892176],[55.85118976975547,37.67088797718349],[55.858141879903556,37.65990164905848],[55.866444152347825,37.662304908335834],[55.888446205227,37.67466452747646],[55.895005797107515,37.67260459095303],[55.89732068132655,37.64513877064052],[55.901564275496035,37.62076285511318],[55.90927870698827,37.587460547984264]]}">
+                      Проезд Дежнева, 13</option>
+                    <option value="8"
+                      data-rest="{&quot;id&quot;:8,&quot;img&quot;:&quot;assets/img/rests/4.jpg&quot;,&quot;address&quot;:&quot;Ул. Перерва, 52&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Солнцево»&quot;],&quot;filter&quot;:&quot;Перерва, Солнцево&quot;,&quot;geo&quot;:[55.655783,37.744576]}">
+                      Ул. Перерва, 52</option>
+                    <option value="9"
+                      data-rest="{&quot;id&quot;:9,&quot;img&quot;:&quot;assets/img/rests/1.jpg&quot;,&quot;address&quot;:&quot;Шоссе Энтузиастов, 66/1&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Измайловская»&quot;],&quot;filter&quot;:&quot;Шоссе Энтузиастов, Измайловская&quot;,&quot;geo&quot;:[55.763027,37.778416]}">
+                      Шоссе Энтузиастов, 66/1</option>
+                    <option value="10"
+                      data-rest="{&quot;id&quot;:10,&quot;img&quot;:&quot;assets/img/rests/2.jpg&quot;,&quot;address&quot;:&quot;Лермонтовский пр., 10, к.1&quot;,&quot;worktime&quot;:&quot;ПН-ВС: 12:00-00:00&quot;,&quot;metro&quot;:[&quot;«Измайловская»&quot;,&quot;«Солнцево»&quot;],&quot;filter&quot;:&quot;Измайловская, Солнцево, Лермонтовский проезд&quot;,&quot;geo&quot;:[55.700562,37.851808]}">
+                      Лермонтовский пр., 10, к.1</option>
+                  </select><span class="input__message _hidden js-input__error-message" id="undefined_error"
+                    aria-hidden="true"></span></div><button class="booking__map-button" type="button"
+                  data-modal="popup_map_rests">Показать на карте</button>
+              </div>
+              <div class="input _lg _in-white js-input">
+                <div class="input__inner"><label class="input__label js-input__label" for="feedback_name">Имя<span
+                      class="input__required" aria-hidden="true">*</span></label><input
+                    class="input__input  js-input__input" id="feedback_name" data-error-message="Это поле обязательно"
+                    type="text" name="name" required></div><span class="input__message _hidden js-input__error-message"
+                  id="feedback_name_error" aria-hidden="true">Это поле обязательно</span>
+              </div>
+              <div class="input _lg _in-white js-inputmask js-input">
+                <div class="input__inner"><label class="input__label js-input__label" for="feedback_phone">Телефон<span
+                      class="input__required" aria-hidden="true">*</span></label><input
+                    class="input__input  js-input__input" id="feedback_phone" data-error-message="Это поле обязательно"
+                    type="text" name="phone" required data-inputmask-alias="tel" data-inputmask-inputmode="tel"></div>
+                <span class="input__message _hidden js-input__error-message" id="feedback_phone_error"
+                  aria-hidden="true">Это поле обязательно</span>
+              </div>
+              <div class="input _lg _in-white js-inputmask js-input">
+                <div class="input__inner"><label class="input__label js-input__label" for="feedback_email">Email<span
+                      class="input__required" aria-hidden="true">*</span></label><input
+                    class="input__input  js-input__input" id="feedback_email" data-error-message="Это поле обязательно"
+                    type="text" name="email2" required data-inputmask-alias="email" data-inputmask-inputmode="email">
+                </div><span class="input__message _hidden js-input__error-message" id="feedback_email_error"
+                  aria-hidden="true">Это поле обязательно</span>
+              </div>
+              <div class="input _lg _in-white js-input _textarea">
+                <div class="input__inner"><label class="_textarea input__label js-input__label"
+                    for="feedback_comment">Ваш вопрос или пожелание<span class="input__required"
+                      aria-hidden="true">*</span></label><textarea class="input__input _textarea js-input__input"
+                    id="feedback_comment" data-error-message="Это поле обязательно" name="comment"
+                    required></textarea><span class="input__resize-icon"></span></div><span
+                  class="input__message _hidden js-input__error-message" id="feedback_comment_error"
+                  aria-hidden="true">Это поле обязательно</span>
+              </div>
+              <div class="checkbox js-input"> <input class="js-input__input" type="checkbox" id="feedback_agreement"
+                  data-error-message="Необходимо дать свое согласие" name="agreement" required checked><label
+                  class="checkbox__label" for="feedback_agreement"><svg class="svgsprite _checkbox-check" tabindex="-1"
+                    role="img" aria-hidden="true">
+                    <use xlink:href="svgsprite.svg#checkbox-check" tabindex="-1"></use>
+                  </svg><span> Даю согласие на обработку персональных данных</span></label><span
+                  class="checkbox__message _hidden js-input__error-message" id="feedback_agreement_error"
+                  aria-hidden="true">Необходимо дать свое согласие</span></div>
+            </div><button class="btn _in-black _lg _wide" type="submit"><span>Отправить</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup _tnx js-feedback-tnx" role="dialog" aria-labelledby="popup_title_booking_tnx"
+      aria-modal="true" aria-hidden="true" id="popup_booking_tnx">
+      <div class="popup__overlay js-popup__close" aria-hidden="true"></div>
+      <div class="popup__inner"><button class="popup__close js-popup__close" type="button" title="Закрыть"><svg
+            class="svgsprite _close" tabindex="-1" role="img" aria-hidden="true">
+            <use xlink:href="svgsprite.svg#close" tabindex="-1"></use>
+          </svg></button>
+        <div class="popup__content">
+          <div class="popup__loader"></div>
+          <div class="popup__ajax__content js-popup__content">
+            <div class="tnx"><img class="tnx__picture" loading="lazy" src="assets/img/draws/tnx.svg"
+                alt="Спасибо за сообщение!" aria-hidden="true">
+              <p class="tnx__title">Спасибо за сообщение!</p>
+              <p class="tnx__text">Мы внимательно прочитаем его и свяжемся с вами в случае необходимости.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
