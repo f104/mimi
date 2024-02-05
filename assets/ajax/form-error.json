@@ -1,6 +1,6 @@
 {
-	"success": true,
-	"message": "1231231",
+	"success": false,
+	"message": "Error message",
 	"errors": {
 		"phone": "Incorrect phone",
 		"code": "Incorrect code"

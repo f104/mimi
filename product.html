@@ -466,7 +466,15 @@
             <form class="product__order">
               <div class="product__order__header">
                 <h4 class="product__order__price">29 600 ₽</h4><button
-                  class="btn _in-black _xl _wide"><span>Заказать</span></button>
+                  class="btn _in-black _xl _wide product__order__submit"
+                  onclick="this.closest('form').classList.add('_in-cart'); return false;"><span>Заказать</span></button>
+                <div class="product__order__change">
+                  <div class="input-number js-input-number _in-card"><button
+                      class="input-number__button _minus js-input-number__button-minus" type="button"></button><input
+                      class="input-number__input js-input-number__input" type="number" readonly autocomplete="off"
+                      tabindex="-1" name="count" min="0" max="10" value="1"><button
+                      class="input-number__button _plus js-input-number__button-plus" type="button"></button></div>
+                </div>
               </div>
               <div class="product__order__badge"><span class="product__order__badge__number">+9
                   600</span><span>бонусов</span></div>

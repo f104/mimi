@@ -434,7 +434,7 @@
                       href="#">Пользовательского соглашения и Обработки персональных данных</a></p>
                 </form>
                 <form class="login__block _hidden js-form js-login__confirm-form" novalidate autocomplete="off"
-                  action="form-success" id="login_confirm_form" data-login-timer="10">
+                  action="form-error" id="login_confirm_form" data-login-timer="3">
                   <div class="login__header">
                     <p class="login__subtitle">Введите код из СМС</p>
                   </div>
@@ -442,16 +442,19 @@
                       inputmode="numeric"><input class="login__input js-login__input" type="number"
                       inputmode="numeric"><input class="login__input js-login__input" type="number"
                       inputmode="numeric"><input class="login__input js-login__input" type="number" inputmode="numeric">
-                  </div>
-                  <p class="login__text">Мы отправили код на номер:<strong>+7 (495) 123-45-67</strong></p>
+                  </div><input class="js-hidden-input" name="phone"><input class="js-hidden-input" name="code">
+                  <p class="login__error _hidden input__message js-form__error-message"> </p>
+                  <p class="login__text">Мы отправили код на номер:<strong class="js-login__phone__span"></strong></p>
                   <p class="login__timer js-login__timer-wrapper">Получить новый код можно через:<span
                       class="login__timer__number"> <span class="js-login__timer">60</span>
                       сек.</span></p>
-                  <div class="login__resend-buttons _hidden js-login__resend"><button class="btn _in-black _lg _wide"
-                      type="submit" form="login_form"><span>Отправить новый код</span></button><button
-                      class="btn _in-black-outline _lg _wide js-login__reenter" type="button"><span>Изменить номер
-                        телефона</span></button></div>
+                  <div class="login__resend-buttons _hidden js-login__resend"><button
+                      class="btn _in-black _lg _wide js-login__resend-btn" type="button"><span>Отправить новый
+                        код</span></button><button class="btn _in-black-outline _lg _wide js-login__reenter"
+                      type="button"><span>Изменить номер телефона</span></button></div>
                 </form>
+                <form class="js-form js-login__resend-form" novalidate action="form-success" id="login_resend_form">
+                  <input class="js-hidden-input" name="phone"></form>
               </div>
             </div>
           </div>
