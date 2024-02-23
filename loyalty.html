@@ -79,16 +79,16 @@
             </div>
           </div>
           <div class="header__cart js-header-cart">
-            <div class="cart _in-header">
+            <form class="cart _in-header full" id="msOrder">
               <div class="cart__header">
                 <h3 class="cart__title">Корзина</h3><button class="cart__clear">Очистить</button>
               </div>
               <div class="cart__delivery-wrapper">
                 <div class="delivery-toggler _in-gray"><label class="delivery-toggler__item"><input
-                      class="js-checkout-delivery__toggler" type="radio" value="1" name="cart_delivery_header"
-                      checked><span class="delivery-toggler__item__inner">Доставка</span></label><label
+                      class="js-checkout-delivery__toggler" type="radio" value="1" name="cart_delivery" checked><span
+                      class="delivery-toggler__item__inner">Доставка</span></label><label
                     class="delivery-toggler__item"><input class="js-checkout-delivery__toggler" type="radio" value="2"
-                      name="cart_delivery_header"><span class="delivery-toggler__item__inner">Самовывоз</span><span
+                      name="cart_delivery"><span class="delivery-toggler__item__inner">Самовывоз</span><span
                       class="delivery-toggler__item__badge"><span
                         class="delivery-toggler__item__badge__inner">-15%</span></span></label></div>
               </div>
@@ -258,7 +258,7 @@
                   src="assets/img/draws/cart-empty.svg" alt="">
                 <p class="cart__empty__text">Корзина пуста, а в меню много вкусного</p>
               </div>
-            </div><a class="header__btn _in-orange _cart js-header-cart-toggler" href="#" title="Корзина"><svg
+            </form><a class="header__btn _in-orange _cart js-header-cart-toggler" href="#" title="Корзина"><svg
                 class="svgsprite _cart" tabindex="-1" role="img" aria-hidden="true">
                 <use xlink:href="svgsprite.svg#cart" tabindex="-1"></use>
               </svg><span class="header__btn__text">1100 ₽</span></a>
@@ -417,41 +417,46 @@
             <div class="loyalty-card">
               <h3 class="loyalty-card__title">Как копить
                 бонусы?</h3>
-              <ul class="loyalty-card__list">
-                <li class="loyalty-card__list__item">Бонусные баллы начисляются с каждого заказа доставки на официальном
-                  сайте MiMi на странице: <br><a href="#">Restoran-mimi.ru/delivery/</a></li>
-                <li class="loyalty-card__list__item">Получайте <strong>1 бонус</strong> за каждые потраченные
-                  <strong>10 рублей</strong>.</li>
-              </ul>
+              <div class="loyalty-card__rte">
+                <ul>
+                  <li>Бонусные баллы начисляются с каждого заказа доставки на официальном сайте MiMi на странице: <br><a
+                      href="#">Restoran-mimi.ru/delivery/</a></li>
+                  <li>Получайте <strong>1 бонус</strong> за каждые потраченные <strong>10 рублей</strong>.</li>
+                </ul>
+              </div>
             </div>
             <div class="loyalty-card">
               <h3 class="loyalty-card__title">Как потратить
                 бонусы?</h3>
-              <ul class="loyalty-card__list">
-                <li class="loyalty-card__list__item">Правила простые! <br><strong>1 бонус — это 1 рубль.</strong></li>
-                <li class="loyalty-card__list__item">Вы можете оплатить бонусами <strong>до 20%</strong> стоимости
-                  любого заказа.</li>
-                <li class="loyalty-card__list__item">Бонусы сгорают через <strong>пол года</strong>, если вы не успели
-                  списать их спустя <strong>180 дней</strong> со дня начисления.</li>
-              </ul>
+              <div class="loyalty-card__rte">
+                <ul>
+                  <li>Правила простые! <br><strong>1 бонус — это 1 рубль.</strong></li>
+                  <li>Вы можете оплатить бонусами <strong>до 20%</strong> стоимости любого заказа.</li>
+                  <li>Бонусы сгорают через <strong>пол года</strong>, если вы не успели списать их спустя <strong>180
+                      дней</strong> со дня начисления.</li>
+                </ul>
+              </div>
             </div>
             <div class="loyalty-card">
               <h3 class="loyalty-card__title">Когда нельзя
                 потратить?</h3>
-              <ul class="loyalty-card__list">
-                <li class="loyalty-card__list__item">Бонусы нельзя тратить при посещении ресторана.</li>
-                <li class="loyalty-card__list__item">Бонусы нельзя списать одновременно с использованием промокодов
-                  на подарки, или скидкой за самовывоз.</li>
-                <li class="loyalty-card__list__item">Бонусы нельзя копить и тратить при заказе доставки в агрегаторах
-                  Яндекс.Еда и Delivery Club.</li>
-              </ul>
+              <div class="loyalty-card__rte">
+                <ul>
+                  <li>Бонусы нельзя тратить при посещении ресторана.</li>
+                  <li>Бонусы нельзя списать одновременно с использованием промокодов на подарки, или скидкой
+                    за самовывоз.</li>
+                  <li>Бонусы нельзя копить и тратить при заказе доставки в агрегаторах Яндекс.Еда и Delivery Club.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
         <div class="block">
-          <p class="loyalty-text">Условия данной программы лояльности распространяются только на заказы с доставкой
-            на дом или самовывоз оформленные на официальном сайте MiMi<br><a
-              href="#">Restoran-mimi.ru/delivery</a><br>и не применимы при посещении ресторанов.</p>
+          <div class="loyalty-text">
+            <p>Условия данной программы лояльности распространяются только на заказы с доставкой на дом или самовывоз
+              оформленные на официальном сайте MiMi<br><a href="#">Restoran-mimi.ru/delivery</a><br>и не применимы при
+              посещении ресторанов.</p>
+          </div>
         </div>
         <div class="block">
           <div class="promo">
@@ -1182,7 +1187,7 @@
                   class="checkbox__label" for="feedback_agreement"><svg class="svgsprite _checkbox-check" tabindex="-1"
                     role="img" aria-hidden="true">
                     <use xlink:href="svgsprite.svg#checkbox-check" tabindex="-1"></use>
-                  </svg><span> Даю согласие на обработку персональных данных</span></label><span
+                  </svg><span> Даю согласие на обработку <a href="#">персональных данных</a></span></label><span
                   class="checkbox__message _hidden js-input__error-message" id="feedback_agreement_error"
                   aria-hidden="true">Необходимо дать свое согласие</span></div>
             </div><button class="btn _in-black _lg _wide" type="submit"><span>Отправить</span></button>

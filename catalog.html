@@ -80,16 +80,16 @@
             </div>
           </div>
           <div class="header__cart js-header-cart">
-            <div class="cart _in-header">
+            <form class="cart _in-header full" id="msOrder">
               <div class="cart__header">
                 <h3 class="cart__title">Корзина</h3><button class="cart__clear">Очистить</button>
               </div>
               <div class="cart__delivery-wrapper">
                 <div class="delivery-toggler _in-gray"><label class="delivery-toggler__item"><input
-                      class="js-checkout-delivery__toggler" type="radio" value="1" name="cart_delivery_header"
-                      checked><span class="delivery-toggler__item__inner">Доставка</span></label><label
+                      class="js-checkout-delivery__toggler" type="radio" value="1" name="cart_delivery" checked><span
+                      class="delivery-toggler__item__inner">Доставка</span></label><label
                     class="delivery-toggler__item"><input class="js-checkout-delivery__toggler" type="radio" value="2"
-                      name="cart_delivery_header"><span class="delivery-toggler__item__inner">Самовывоз</span><span
+                      name="cart_delivery"><span class="delivery-toggler__item__inner">Самовывоз</span><span
                       class="delivery-toggler__item__badge"><span
                         class="delivery-toggler__item__badge__inner">-15%</span></span></label></div>
               </div>
@@ -259,7 +259,7 @@
                   src="assets/img/draws/cart-empty.svg" alt="">
                 <p class="cart__empty__text">Корзина пуста, а в меню много вкусного</p>
               </div>
-            </div><a class="header__btn _in-orange _cart js-header-cart-toggler" href="#" title="Корзина"><svg
+            </form><a class="header__btn _in-orange _cart js-header-cart-toggler" href="#" title="Корзина"><svg
                 class="svgsprite _cart" tabindex="-1" role="img" aria-hidden="true">
                 <use xlink:href="svgsprite.svg#cart" tabindex="-1"></use>
               </svg><span class="header__btn__text">1100 ₽</span></a>
@@ -423,36 +423,16 @@
                 </div>
               </div>
             </div>
-            <div class="catalog__filter"><label class="checkbox-tag _filter"><input type="checkbox" name="filter"
-                  value="0" checked><span class="checkbox-tag__inner">Летнее меню</span></label><label
-                class="checkbox-tag _filter"><input type="checkbox" name="filter" value="1" checked><span
-                  class="checkbox-tag__inner">Сеты</span></label><label class="checkbox-tag _filter"><input
-                  type="checkbox" name="filter" value="2"><span class="checkbox-tag__inner">Холодные
-                  закуски</span></label><label class="checkbox-tag _filter"><input type="checkbox" name="filter"
-                  value="3"><span class="checkbox-tag__inner">Салаты</span></label><label
-                class="checkbox-tag _filter"><input type="checkbox" name="filter" value="4"><span
-                  class="checkbox-tag__inner">Выпечка</span></label><label class="checkbox-tag _filter"><input
-                  type="checkbox" name="filter" value="5"><span class="checkbox-tag__inner">Супы</span></label><label
-                class="checkbox-tag _filter"><input type="checkbox" name="filter" value="6"><span
-                  class="checkbox-tag__inner">Горячие закуски</span></label><label class="checkbox-tag _filter"><input
-                  type="checkbox" name="filter" value="7"><span class="checkbox-tag__inner">Мясные
-                  блюда</span></label><label class="checkbox-tag _filter"><input type="checkbox" name="filter"
-                  value="8"><span class="checkbox-tag__inner">Выпечка</span></label><label
-                class="checkbox-tag _filter"><input type="checkbox" name="filter" value="9"><span
-                  class="checkbox-tag__inner">Рыбные блюда</span></label><label class="checkbox-tag _filter"><input
-                  type="checkbox" name="filter" value="10"><span
-                  class="checkbox-tag__inner">Шашлыки</span></label><label class="checkbox-tag _filter"><input
-                  type="checkbox" name="filter" value="11"><span
-                  class="checkbox-tag__inner">Гарниры</span></label><label class="checkbox-tag _filter"><input
-                  type="checkbox" name="filter" value="12"><span class="checkbox-tag__inner">Соусы</span></label><label
-                class="checkbox-tag _filter"><input type="checkbox" name="filter" value="13"><span
-                  class="checkbox-tag__inner">Десерты</span></label><label class="checkbox-tag _filter"><input
-                  type="checkbox" name="filter" value="14"><span
-                  class="checkbox-tag__inner">Напитки</span></label><label
-                class="checkbox-tag _in-orange _filter"><input type="checkbox" name="filter" value="0"><span
-                  class="checkbox-tag__inner">Торты на заказ</span></label><label
-                class="checkbox-tag _in-orange _filter"><input type="checkbox" name="filter" value="1"><span
-                  class="checkbox-tag__inner">Праздничные</span></label></div>
+            <div class="catalog__filter"><a class="checkbox-link" href="#">Зимнее спецпредложение</a><a
+                class="_active checkbox-link" href="#">Летнее меню</a><a class="checkbox-link" href="#">Сеты</a><a
+                class="checkbox-link" href="#">Холодные закуски</a><a class="checkbox-link" href="#">Салаты</a><a
+                class="checkbox-link" href="#">Выпечка</a><a class="checkbox-link" href="#">Супы</a><a
+                class="checkbox-link" href="#">Горячие закуски</a><a class="checkbox-link" href="#">Мясные блюда</a><a
+                class="checkbox-link" href="#">Выпечка</a><a class="checkbox-link" href="#">Рыбные блюда</a><a
+                class="checkbox-link" href="#">Шашлыки</a><a class="checkbox-link" href="#">Гарниры</a><a
+                class="checkbox-link" href="#">Соусы</a><a class="checkbox-link" href="#">Десерты</a><a
+                class="checkbox-link" href="#">Напитки</a><a class="checkbox-link _in-orange" href="#">Торты на
+                заказ</a><a class="_active checkbox-link _in-orange" href="#">Праздничные</a></div>
             <div class="catalog__content">
               <div class="catalog__content__block">
                 <h3 class="h3 catalog__title">Летнее меню</h3>
@@ -992,7 +972,7 @@
               </div>
             </div>
             <div class="catalog__cart">
-              <div class="cart">
+              <form class="cart  full">
                 <div class="cart__header">
                   <h3 class="cart__title">Корзина</h3><button class="cart__clear">Очистить</button>
                 </div>
@@ -1171,7 +1151,7 @@
                     src="assets/img/draws/cart-empty.svg" alt="">
                   <p class="cart__empty__text">Корзина пуста, а в меню много вкусного</p>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -1276,6 +1256,19 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="cart _mobile full">
+        <div class="cart__delivery"><svg class="svgsprite _delivery-2" tabindex="-1" role="img" aria-hidden="true">
+            <use xlink:href="svgsprite.svg#delivery-2" tabindex="-1"></use>
+          </svg><span class="cart__delivery__content"><span class="cart__delivery__strong">Доставка: 150 ₽ | ~60-80
+              мин.</span><span>Бесплатно от 2000 ₽</span></span><button class="cart__delivery__help"
+            data-tippy-content="Rapidiously innovate error-free materials with efficient growth strategies. Phosfluorescently supply resource sucking markets and cross-platform infrastructures. Appropriately recaptiualize future-proof e-business before frictionless growth strategies."><svg
+              class="svgsprite _info" tabindex="-1" role="img">
+              <use xlink:href="svgsprite.svg#info" tabindex="-1"></use>
+            </svg></button></div><a class="btn _in-orange _wide cart__submit" href="#"><svg class="svgsprite _cart"
+            tabindex="-1" role="img">
+            <use xlink:href="svgsprite.svg#cart" tabindex="-1"></use>
+          </svg><span>Оформить: 1 100 ₽</span></a>
       </div>
     </div>
     <div class="booking js-booking" id="booking">
@@ -1922,7 +1915,7 @@
                   class="checkbox__label" for="feedback_agreement"><svg class="svgsprite _checkbox-check" tabindex="-1"
                     role="img" aria-hidden="true">
                     <use xlink:href="svgsprite.svg#checkbox-check" tabindex="-1"></use>
-                  </svg><span> Даю согласие на обработку персональных данных</span></label><span
+                  </svg><span> Даю согласие на обработку <a href="#">персональных данных</a></span></label><span
                   class="checkbox__message _hidden js-input__error-message" id="feedback_agreement_error"
                   aria-hidden="true">Необходимо дать свое согласие</span></div>
             </div><button class="btn _in-black _lg _wide" type="submit"><span>Отправить</span></button>

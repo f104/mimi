@@ -80,16 +80,16 @@
             </div>
           </div>
           <div class="header__cart js-header-cart">
-            <div class="cart _in-header">
+            <form class="cart _in-header full" id="msOrder">
               <div class="cart__header">
                 <h3 class="cart__title">Корзина</h3><button class="cart__clear">Очистить</button>
               </div>
               <div class="cart__delivery-wrapper">
                 <div class="delivery-toggler _in-gray"><label class="delivery-toggler__item"><input
-                      class="js-checkout-delivery__toggler" type="radio" value="1" name="cart_delivery_header"
-                      checked><span class="delivery-toggler__item__inner">Доставка</span></label><label
+                      class="js-checkout-delivery__toggler" type="radio" value="1" name="cart_delivery" checked><span
+                      class="delivery-toggler__item__inner">Доставка</span></label><label
                     class="delivery-toggler__item"><input class="js-checkout-delivery__toggler" type="radio" value="2"
-                      name="cart_delivery_header"><span class="delivery-toggler__item__inner">Самовывоз</span><span
+                      name="cart_delivery"><span class="delivery-toggler__item__inner">Самовывоз</span><span
                       class="delivery-toggler__item__badge"><span
                         class="delivery-toggler__item__badge__inner">-15%</span></span></label></div>
               </div>
@@ -259,7 +259,7 @@
                   src="assets/img/draws/cart-empty.svg" alt="">
                 <p class="cart__empty__text">Корзина пуста, а в меню много вкусного</p>
               </div>
-            </div><a class="header__btn _in-orange _cart js-header-cart-toggler" href="#" title="Корзина"><svg
+            </form><a class="header__btn _in-orange _cart js-header-cart-toggler" href="#" title="Корзина"><svg
                 class="svgsprite _cart" tabindex="-1" role="img" aria-hidden="true">
                 <use xlink:href="svgsprite.svg#cart" tabindex="-1"></use>
               </svg><span class="header__btn__text">1100 ₽</span></a>
@@ -370,22 +370,24 @@
       </div>
       <div class="container">
         <h1 class="page-h1">Блог MiMi</h1>
-        <div class="block catalog _blog">
-          <div class="catalog__inner">
-            <div class="catalog__filter"><label class="checkbox-tag _filter"><input type="checkbox" name="filter"
-                  value="0"><span class="checkbox-tag__inner">Разборы законов</span></label><label
-                class="checkbox-tag _filter"><input type="checkbox" name="filter" value="1" checked><span
+        <div class="block catalog _blog js-filter-form__wrap">
+          <form class="catalog__inner js-filter-form" novalidate autocomplete="off">
+            <div class="catalog__filter js-checkbox-group"><label class="checkbox-tag _filter"><input
+                  class="js-checkbox-group__input" type="checkbox" name="filter" value="1"><span
+                  class="checkbox-tag__inner">Разборы законов</span></label><label class="checkbox-tag _filter"><input
+                  class="js-checkbox-group__input" type="checkbox" name="filter" value="2"><span
                   class="checkbox-tag__inner">Дневники трат</span></label><label class="checkbox-tag _filter"><input
-                  type="checkbox" name="filter" value="2"><span
+                  class="js-checkbox-group__input" type="checkbox" name="filter" value="3"><span
                   class="checkbox-tag__inner">Калькуляторы</span></label><label class="checkbox-tag _filter"><input
-                  type="checkbox" name="filter" value="3"><span class="checkbox-tag__inner">Подкасты и
-                  видео</span></label><label class="checkbox-tag _filter"><input type="checkbox" name="filter"
-                  value="4"><span class="checkbox-tag__inner">Тесты</span></label><label
-                class="checkbox-tag _filter"><input type="checkbox" name="filter" value="5"><span
+                  class="js-checkbox-group__input" type="checkbox" name="filter" value="4"><span
+                  class="checkbox-tag__inner">Подкасты и видео</span></label><label class="checkbox-tag _filter"><input
+                  class="js-checkbox-group__input" type="checkbox" name="filter" value="5"><span
+                  class="checkbox-tag__inner">Тесты</span></label><label class="checkbox-tag _filter"><input
+                  class="js-checkbox-group__input" type="checkbox" name="filter" value="6"><span
                   class="checkbox-tag__inner">Экономика</span></label></div>
             <div class="catalog__content">
-              <div class="catalog__content__block">
-                <div class="catalog__grid">
+              <div class="catalog__content__block js-page" aria-live="assertive" aria-atomic="true">
+                <div class="catalog__grid js-page__inner">
                   <div class="blog-item"><a class="blog-item__picture-wrapper" href="#">
                       <picture class="blog-item__picture">
                         <source srcset="assets/img/blog/1.jpg 1x, assets/img/blog/1.jpg 2x" media="(min-width: 768px)"
@@ -679,29 +681,25 @@
                           tabindex="-1" role="img" aria-hidden="true">
                           <use xlink:href="svgsprite.svg#stopwatch" tabindex="-1"></use>
                         </svg><span>10 мин.</span></span></div>
-                  </div>
-                </div>
-                <div class="pagination"><button class="btn _in-black _wide-sm pagination__more"><span>Загрузить
-                      еще</span></button>
-                  <div class="pagination__inner"><a class="pagination__button _prev" href="#"
-                      title="Предыдущая страница"><svg class="svgsprite _arrow-link" tabindex="-1" role="img"
-                        aria-hidden="true">
-                        <use xlink:href="svgsprite.svg#arrow-link" tabindex="-1"></use>
-                      </svg></a>
-                    <div class="pagination__nums"><a class="pagination__button" href="#" title="Страница 1">1</a><span
-                        class="pagination__button _active" title="Текущая страница">2</span><a
-                        class="pagination__button" href="#" title="Страница 3">3</a><span class="pagination__separator"
-                        aria-hidden="true"> <span></span></span><a class="pagination__button" href="#"
-                        title="Страница 10">10</a></div><a class="pagination__button _next" href="#"
-                      title="Следующая страница"><svg class="svgsprite _arrow-link" tabindex="-1" role="img"
-                        aria-hidden="true">
-                        <use xlink:href="svgsprite.svg#arrow-link" tabindex="-1"></use>
-                      </svg></a>
                   </div>
                 </div>
               </div>
+              <div class="page-preloader js-filter-form__preloader" role="alert" aria-live="assertive">
+                <div class="page-preloader__inner"><span class="screen-reader-only">Идет загрузка</span>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="js-pagination-common__placeholder"> </div>
+              <div class="pagination-common__wrap js-pagination-common__wrap"><button
+                  class="btn _in-black _wide-sm pagination-common__show-more js-pagination-common__show-more"
+                  type="button"><span>Загрузить ещё</span></button>
+                <ul class="pagination-common js-pagination-common" data-pages="12" data-page="1"></ul>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
         <div class="block">
           <div class="block__grid">
@@ -1794,7 +1792,7 @@
                   class="checkbox__label" for="feedback_agreement"><svg class="svgsprite _checkbox-check" tabindex="-1"
                     role="img" aria-hidden="true">
                     <use xlink:href="svgsprite.svg#checkbox-check" tabindex="-1"></use>
-                  </svg><span> Даю согласие на обработку персональных данных</span></label><span
+                  </svg><span> Даю согласие на обработку <a href="#">персональных данных</a></span></label><span
                   class="checkbox__message _hidden js-input__error-message" id="feedback_agreement_error"
                   aria-hidden="true">Необходимо дать свое согласие</span></div>
             </div><button class="btn _in-black _lg _wide" type="submit"><span>Отправить</span></button>

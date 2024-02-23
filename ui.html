@@ -80,16 +80,16 @@
             </div>
           </div>
           <div class="header__cart js-header-cart">
-            <div class="cart _in-header">
+            <form class="cart _in-header full" id="msOrder">
               <div class="cart__header">
                 <h3 class="cart__title">Корзина</h3><button class="cart__clear">Очистить</button>
               </div>
               <div class="cart__delivery-wrapper">
                 <div class="delivery-toggler _in-gray"><label class="delivery-toggler__item"><input
-                      class="js-checkout-delivery__toggler" type="radio" value="1" name="cart_delivery_header"
-                      checked><span class="delivery-toggler__item__inner">Доставка</span></label><label
+                      class="js-checkout-delivery__toggler" type="radio" value="1" name="cart_delivery" checked><span
+                      class="delivery-toggler__item__inner">Доставка</span></label><label
                     class="delivery-toggler__item"><input class="js-checkout-delivery__toggler" type="radio" value="2"
-                      name="cart_delivery_header"><span class="delivery-toggler__item__inner">Самовывоз</span><span
+                      name="cart_delivery"><span class="delivery-toggler__item__inner">Самовывоз</span><span
                       class="delivery-toggler__item__badge"><span
                         class="delivery-toggler__item__badge__inner">-15%</span></span></label></div>
               </div>
@@ -259,7 +259,7 @@
                   src="assets/img/draws/cart-empty.svg" alt="">
                 <p class="cart__empty__text">Корзина пуста, а в меню много вкусного</p>
               </div>
-            </div><a class="header__btn _in-orange _cart js-header-cart-toggler" href="#" title="Корзина"><svg
+            </form><a class="header__btn _in-orange _cart js-header-cart-toggler" href="#" title="Корзина"><svg
                 class="svgsprite _cart" tabindex="-1" role="img" aria-hidden="true">
                 <use xlink:href="svgsprite.svg#cart" tabindex="-1"></use>
               </svg><span class="header__btn__text">1100 ₽</span></a>
@@ -505,7 +505,7 @@
                 class="input__input  js-input__input js-datepicker__input" id="date"
                 aria-describedby=" date_hidden-caption" data-error-message="Необходимо заполнить это поле" readonly
                 type="text" autocomplete="off" name="date" required data-disabled-to-today
-                value="2024-02-04T11:53:08.728Z"><svg class="svgsprite _arrow-select input__icon _icon-right"
+                value="2024-02-23T10:32:42.574Z"><svg class="svgsprite _arrow-select input__icon _icon-right"
                 tabindex="-1" role="img" aria-hidden="true">
                 <use xlink:href="svgsprite.svg#arrow-select" tabindex="-1"></use>
               </svg></div><span class="input__message _hidden js-input__error-message" id="date_error"
@@ -532,18 +532,20 @@
               class="input-number__input js-input-number__input" type="number" readonly autocomplete="off" tabindex="-1"
               name="count" min="0" max="10" value="1"><button
               class="input-number__button _plus js-input-number__button-plus" type="button"></button></div>
-          <div class="flex"><label class="checkbox-tag"><input type="checkbox" name="checkbox-tag-checkbox"
-                value="1"><span class="checkbox-tag__inner">.checkbox-tag checkbox</span></label><label
-              class="checkbox-tag"><input type="checkbox" name="checkbox-tag-checkbox" value="2"><span
-                class="checkbox-tag__inner">.checkbox-tag checkbox</span></label></div>
-          <div class="flex"><label class="checkbox-tag _in-orange"><input type="radio" name="checkbox-tag-checkbox"
-                value="1" checked="true"><span class="checkbox-tag__inner">.checkbox-tag._in-orange
-                radio</span></label><label class="checkbox-tag _in-orange"><input type="radio"
+          <div class="flex"><label class="checkbox-tag"><input class="js-checkbox-group__input" type="checkbox"
+                name="checkbox-tag-checkbox" value="1"><span class="checkbox-tag__inner">.checkbox-tag
+                checkbox</span></label><label class="checkbox-tag"><input class="js-checkbox-group__input"
+                type="checkbox" name="checkbox-tag-checkbox" value="2"><span class="checkbox-tag__inner">.checkbox-tag
+                checkbox</span></label></div>
+          <div class="flex"><label class="checkbox-tag _in-orange"><input class="js-checkbox-group__input" type="radio"
+                name="checkbox-tag-checkbox" value="1" checked="true"><span
+                class="checkbox-tag__inner">.checkbox-tag._in-orange radio</span></label><label
+              class="checkbox-tag _in-orange"><input class="js-checkbox-group__input" type="radio"
                 name="checkbox-tag-checkbox" value="2"><span class="checkbox-tag__inner">.checkbox-tag._in-orange
                 radio</span></label></div>
         </form>
         <div class="flex">
-          <div class="cart" style="width: 36rem;">
+          <form class="cart  full" style="width: 36rem;">
             <div class="cart__header">
               <h3 class="cart__title">Корзина</h3><button class="cart__clear">Очистить</button>
             </div>
@@ -722,8 +724,8 @@
                 alt="">
               <p class="cart__empty__text">Корзина пуста, а в меню много вкусного</p>
             </div>
-          </div>
-          <div class="cart" style="width: 36rem;">
+          </form>
+          <form class="cart  full" style="width: 36rem;">
             <div class="cart__header">
               <h3 class="cart__title">Корзина</h3><button class="cart__clear">Очистить</button>
             </div>
@@ -902,8 +904,8 @@
                 alt="">
               <p class="cart__empty__text">Корзина пуста, а в меню много вкусного</p>
             </div>
-          </div>
-          <div class="cart _is-empty" style="width: 36rem; align-self: flex-start;">
+          </form>
+          <form class="cart" style="width: 36rem; align-self: flex-start;">
             <div class="cart__header">
               <h3 class="cart__title">Корзина</h3><button class="cart__clear">Очистить</button>
             </div>
@@ -1082,7 +1084,7 @@
                 alt="">
               <p class="cart__empty__text">Корзина пуста, а в меню много вкусного</p>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -1730,7 +1732,7 @@
                   class="checkbox__label" for="feedback_agreement"><svg class="svgsprite _checkbox-check" tabindex="-1"
                     role="img" aria-hidden="true">
                     <use xlink:href="svgsprite.svg#checkbox-check" tabindex="-1"></use>
-                  </svg><span> Даю согласие на обработку персональных данных</span></label><span
+                  </svg><span> Даю согласие на обработку <a href="#">персональных данных</a></span></label><span
                   class="checkbox__message _hidden js-input__error-message" id="feedback_agreement_error"
                   aria-hidden="true">Необходимо дать свое согласие</span></div>
             </div><button class="btn _in-black _lg _wide" type="submit"><span>Отправить</span></button>

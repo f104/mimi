@@ -79,16 +79,16 @@
             </div>
           </div>
           <div class="header__cart js-header-cart">
-            <div class="cart _in-header">
+            <form class="cart _in-header full" id="msOrder">
               <div class="cart__header">
                 <h3 class="cart__title">Корзина</h3><button class="cart__clear">Очистить</button>
               </div>
               <div class="cart__delivery-wrapper">
                 <div class="delivery-toggler _in-gray"><label class="delivery-toggler__item"><input
-                      class="js-checkout-delivery__toggler" type="radio" value="1" name="cart_delivery_header"
-                      checked><span class="delivery-toggler__item__inner">Доставка</span></label><label
+                      class="js-checkout-delivery__toggler" type="radio" value="1" name="cart_delivery" checked><span
+                      class="delivery-toggler__item__inner">Доставка</span></label><label
                     class="delivery-toggler__item"><input class="js-checkout-delivery__toggler" type="radio" value="2"
-                      name="cart_delivery_header"><span class="delivery-toggler__item__inner">Самовывоз</span><span
+                      name="cart_delivery"><span class="delivery-toggler__item__inner">Самовывоз</span><span
                       class="delivery-toggler__item__badge"><span
                         class="delivery-toggler__item__badge__inner">-15%</span></span></label></div>
               </div>
@@ -258,7 +258,7 @@
                   src="assets/img/draws/cart-empty.svg" alt="">
                 <p class="cart__empty__text">Корзина пуста, а в меню много вкусного</p>
               </div>
-            </div><a class="header__btn _in-orange _cart js-header-cart-toggler" href="#" title="Корзина"><svg
+            </form><a class="header__btn _in-orange _cart js-header-cart-toggler" href="#" title="Корзина"><svg
                 class="svgsprite _cart" tabindex="-1" role="img" aria-hidden="true">
                 <use xlink:href="svgsprite.svg#cart" tabindex="-1"></use>
               </svg><span class="header__btn__text">1100 ₽</span></a>
@@ -1105,7 +1105,7 @@
                   class="checkbox__label" for="feedback_agreement"><svg class="svgsprite _checkbox-check" tabindex="-1"
                     role="img" aria-hidden="true">
                     <use xlink:href="svgsprite.svg#checkbox-check" tabindex="-1"></use>
-                  </svg><span> Даю согласие на обработку персональных данных</span></label><span
+                  </svg><span> Даю согласие на обработку <a href="#">персональных данных</a></span></label><span
                   class="checkbox__message _hidden js-input__error-message" id="feedback_agreement_error"
                   aria-hidden="true">Необходимо дать свое согласие</span></div>
             </div><button class="btn _in-black _lg _wide" type="submit"><span>Отправить</span></button>
