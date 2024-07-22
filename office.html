@@ -42,8 +42,8 @@
             class="header__btn _in-orange visible-md" href="#" title="Доставка"><svg class="svgsprite _delivery"
               tabindex="-1" role="img" aria-hidden="true">
               <use xlink:href="svgsprite.svg#delivery" tabindex="-1"></use>
-            </svg><span class="header__btn__text">Доставка</span></a><a class="header__btn _in-black-outline" href="#"
-            title="Рестораны"><svg class="svgsprite _map" tabindex="-1" role="img" aria-hidden="true">
+            </svg><span class="header__btn__text">Доставка</span></a><a class="header__btn _in-black-outline visible-md"
+            href="#" title="Рестораны"><svg class="svgsprite _map" tabindex="-1" role="img" aria-hidden="true">
               <use xlink:href="svgsprite.svg#map" tabindex="-1"></use>
             </svg><span class="header__btn__text">Рестораны</span></a></div>
         <div class="header__block">
@@ -253,12 +253,11 @@
                     aria-hidden="true">
                     <use xlink:href="svgsprite.svg#delivery-2" tabindex="-1"></use>
                   </svg><span class="cart__delivery__content"><span class="cart__delivery__strong">Доставка: 150 ₽ |
-                      ~60-80 мин.</span><span>Бесплатно от 2000 ₽</span></span><button class="cart__delivery__help"
-                    data-tippy-content="Rapidiously innovate error-free materials with efficient growth strategies. Phosfluorescently supply resource sucking markets and cross-platform infrastructures. Appropriately recaptiualize future-proof e-business before frictionless growth strategies."><svg
-                      class="svgsprite _info" tabindex="-1" role="img">
+                      ~60-80 мин.</span><span>Бесплатно от 2000 ₽</span></span><a class="cart__delivery__help"
+                    href="#"><svg class="svgsprite _info" tabindex="-1" role="img">
                       <use xlink:href="svgsprite.svg#info" tabindex="-1"></use>
-                    </svg></button></div><a class="btn _in-orange _wide cart__submit" href="#"><svg
-                    class="svgsprite _cart" tabindex="-1" role="img">
+                    </svg></a></div><a class="btn _in-orange _wide cart__submit" href="#"><svg class="svgsprite _cart"
+                    tabindex="-1" role="img">
                     <use xlink:href="svgsprite.svg#cart" tabindex="-1"></use>
                   </svg><span>Оформить: 1 100 ₽</span></a>
               </div>
@@ -336,7 +335,9 @@
               <li class="header__menu__nav__item"><a class="header__menu__nav__link" href="#">Контакты</a></li>
             </ul>
             <div class="header__menu__scroll__foot"><button
-                class="btn _in-white _xl _wide js-booking-open"><span>Забронировать стол</span></button>
+                class="btn _in-white _xl _wide js-booking-open"><span>Забронировать стол</span></button><a
+                class="btn _in-white-outline _xl _wide js-office-aside-open" href="office.html"><span>Личный
+                  кабинет</span></a>
               <div class="header__menu__contacts">
                 <div class="call _in-white _in-menu"><svg class="svgsprite _old-phone" tabindex="-1" role="img"
                     aria-hidden="true">
@@ -493,11 +494,11 @@
             title="Закрыть"><svg class="svgsprite _close" tabindex="-1" role="img" aria-hidden="true">
               <use xlink:href="svgsprite.svg#close" tabindex="-1"></use>
             </svg></button>
-          <form class="booking__scroll js-form" novalidate autocomplete="off" action="form-success">
+          <form class="booking__scroll js-form js-datetime" novalidate autocomplete="off" action="form-success">
             <div class="booking__fields">
               <div>
                 <div class="input js-multiselect _hide-search _lg _in-white"><select
-                    class="js-multiselect__select js-checkout-rest js-booking__rest" aria-hidden="true"
+                    class=" js-multiselect__select js-checkout-rest js-booking__rest" aria-hidden="true"
                     data-label="Выберите ресторан" data-error-message="Это поле обязательно" data-is-rests
                     autocomplete="off" required name="rest">
                     <option value="">-</option>
@@ -550,7 +551,7 @@
                 <span class="input__message _hidden js-input__error-message" id="booking_phone_error"
                   aria-hidden="true">Это поле обязательно</span>
               </div>
-              <div class="input js-multiselect _hide-search _lg _in-white"><select class="js-multiselect__select"
+              <div class="input js-multiselect _hide-search _lg _in-white"><select class=" js-multiselect__select"
                   aria-hidden="true" data-label="Количество персон" data-error-message="Это поле обязательно"
                   autocomplete="off" name="persons" required>
                   <option value="">-</option>
@@ -570,11 +571,11 @@
                 <div class="input _lg _in-white _datepicker js-datepicker _with-icon-right js-input">
                   <div class="input__inner"><label class="input__label js-input__label" for="booking_date">Дата<span
                         class="input__required" aria-hidden="true">*</span></label><input
-                      class="input__input  js-input__input js-datepicker__input" id="booking_date"
+                      class="input__input  js-input__input js-datetime__date js-datepicker__input" id="booking_date"
                       aria-describedby=" booking_date_hidden-caption" data-error-message="Необходимо заполнить это поле"
                       readonly type="text" autocomplete="off" name="date" required data-disabled-to-today
-                      data-dp-set-today><svg class="svgsprite _arrow-select input__icon _icon-right" tabindex="-1"
-                      role="img" aria-hidden="true">
+                      _data-disabled-to="2024-07-20"><svg class="svgsprite _arrow-select input__icon _icon-right"
+                      tabindex="-1" role="img" aria-hidden="true">
                       <use xlink:href="svgsprite.svg#arrow-select" tabindex="-1"></use>
                     </svg></div><span class="input__message _hidden js-input__error-message" id="booking_date_error"
                     aria-hidden="true">Необходимо заполнить это поле</span><span class="input__message _hidden"
@@ -590,35 +591,11 @@
                     Переход на 10 лет назад: Alt + стрелка влево или стрелка вниз.
                     Смена представления, от дней до декад: Ctrl + Shift + стрелка вверх.</span>
                 </div>
-                <div class="input js-multiselect _hide-search _lg _in-white"><select class="js-multiselect__select"
-                    aria-hidden="true" data-label="Время" data-error-message="Это поле обязательно" autocomplete="off"
-                    required name="time">
-                    <option value="">-</option>
-                    <option value="12:00">12:00</option>
-                    <option value="12:30">12:30</option>
-                    <option value="13:00">13:00</option>
-                    <option value="13:30">13:30</option>
-                    <option value="14:00">14:00</option>
-                    <option value="14:30">14:30</option>
-                    <option value="15:00">15:00</option>
-                    <option value="15:30">15:30</option>
-                    <option value="16:00">16:00</option>
-                    <option value="16:30">16:30</option>
-                    <option value="17:00">17:00</option>
-                    <option value="17:30">17:30</option>
-                    <option value="18:00">18:00</option>
-                    <option value="18:30">18:30</option>
-                    <option value="19:00">19:00</option>
-                    <option value="19:30">19:30</option>
-                    <option value="20:00">20:00</option>
-                    <option value="20:30">20:30</option>
-                    <option value="21:00">21:00</option>
-                    <option value="21:30">21:30</option>
-                    <option value="22:00">22:00</option>
-                    <option value="22:30">22:30</option>
-                    <option value="23:00">23:00</option>
-                  </select><span class="input__message _hidden js-input__error-message" id="undefined_error"
-                    aria-hidden="true"></span></div>
+                <div class="input js-multiselect _hide-search _lg _in-white"><select
+                    class="js-datetime__time js-multiselect__select" aria-hidden="true" data-label="Время"
+                    data-error-message="Это поле обязательно" data-update-url="time" autocomplete="off" required
+                    name="time" disabled></select><span class="input__message _hidden js-input__error-message"
+                    id="undefined_error" aria-hidden="true"></span></div>
               </div>
               <div class="input _lg _in-white js-input _textarea">
                 <div class="input__inner"><label class="_textarea input__label js-input__label"
@@ -1062,7 +1039,7 @@
             <div class="booking__fields">
               <div>
                 <div class="input js-multiselect _hide-search _lg _in-white"><select
-                    class="js-multiselect__select js-checkout-rest js-feedback__rest" aria-hidden="true"
+                    class=" js-multiselect__select js-checkout-rest js-feedback__rest" aria-hidden="true"
                     data-label="Выберите ресторан" data-error-message="Это поле обязательно" data-is-rests
                     autocomplete="off" name="rest">
                     <option value="">-</option>
